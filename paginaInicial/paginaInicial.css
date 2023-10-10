@@ -1,0 +1,325 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --marromEscuro: #806753;
+    --marromClaro: #FFCEA6;
+}
+
+img{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-color: var(--marromEscuro);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    padding: 13px 190px 13px 190px;
+    gap: 3em; 
+}
+
+.navbar-logo img{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 4px;
+    width: 92px;
+    size: 92px;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list ul{
+    font-size: 22px;
+    display: flex;
+    text-align: center;
+    gap: 3em;
+}
+
+.navbar-list ul a{
+    color: var(--marromClaro);
+}
+
+.navbar-list ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#burguer{
+    display: none;
+    color: var(--marromClaro);
+}
+
+
+#burguer:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a{
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 1535px){
+    .navbar{
+        padding: 13px 80px 13px 80px;
+        gap: 3em; 
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+main{
+    min-width: 300px;
+    max-width: 1536px;
+    margin: auto;
+}
+
+#container-main{
+    height: 600px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+#container-main img{
+    width: 769px;
+    height: 550px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.hero-text{
+    width: 600px;
+}
+
+.hero-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+
+}
+
+.hero-text p{
+    font-size: 1rem;
+    margin-bottom: 200px;
+}
+
+button{
+    padding: 1em, 2rem, 1.1em;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em, -0.2em 0em #FFCEA6 inset;
+    color: var(--marromClaro);
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 30px;
+    max-width: 153px;
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    border: 3px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
+
+footer{
+    height: 400px;
+    background-color: var(--marromEscuro);
+}
+
+#container-footer{
+    height: 350px;
+    padding: 20px;
+    margin-top: 4px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer img{
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: 0%;
+}
+
+.footer-text{
+    color: white;
+    margin: 200px;
+    text-align: justify;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*{
+    margin: 0em;
+    padding: 0em;
+}
+
+body, html{
+    background: rgba(255, 253, 247, 0.80);
+}
+
+
+header {
+    display: flex;
+    width: 1920px;
+    height: 115px;
+    padding: 1em 1em 1em 13.5em;
+    align-items: center;
+    gap: 6.6em;
+    flex-shrink: 0;
+    background: #806753;
+}
+
+.navbar-logo img {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+menu {
+    display: flex;
+    gap: 3em;
+}
+
+menu a {
+    color: #FFCEA6;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+menu a:hover {  
+    color: #000000;
+}
+
+#Hero-Section{
+    width: 1920px;
+    height: 1150px;
+    padding: 10px;
+}
+
+article h1{
+    padding-bottom: 20px;
+}
+
+article p{
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+#wallpaper{ 
+    background: #806753;
+    width: 843.034px;
+    height: 1003.92px;
+    border-radius: 10px;
+    margin-left: 1200px;
+    position: relative;
+
+}
+#FotoPaoDeQueijo{
+    width: 70px;
+    height: 73px;
+    position: absolute;
+    top: 270px;
+    left: 850px;
+    border-radius: 10px;
+
+}
+
+/*margin-top: 10px;
+border-radiu

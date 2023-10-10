@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --marromEscuro: #806753;
+    --marromClaro: #FFCEA6;
+}
+
+.navbar-logo img{
+    margin-top: 4px;
+    width: 92px;
+    size: 92px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marromEscuro);
+    height: 77px;
+    padding: 13px 200px 13px 121px;
+    gap: 3em;
+}  
+
+nav ul{
+    font-size: 22px;
+    display: flex;
+    order: 2;
+}
+
+nav ul a{
+    color: var(--marromClaro);
+    font-size: 1.6;
+    margin-left: 2em;
+}
+nav ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
