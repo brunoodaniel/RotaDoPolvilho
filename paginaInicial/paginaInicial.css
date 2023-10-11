@@ -101,19 +101,21 @@ img{
 
     .mobile-menu{
         background-color: var(--marromEscuro);
+        height: 385px;
     }
 
     .mobile-menu ul{
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
-    
+        gap: 1em;
     }
 
     .mobile-menu ul a{
         display: block;
         padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
     }
 
     .open{
@@ -252,7 +254,7 @@ footer img{
 @media(max-width: 1023px){
     footer{
         display: flex;
-        height: 450px;
+        height: 410px;
         gap: 3rem;
     }
 
@@ -262,10 +264,12 @@ footer img{
        gap: 3rem;
        width: 50%;
        order: 1;
-       margin: 30px 10px 20px 30px;
+       margin: 30px 30px 20px 70px;
     }
 
     footer img{
+        height: 150px;
+        width: 150px;
         order: 2;
     }
 
@@ -274,7 +278,12 @@ footer img{
         
     }
 
+    #footer-contacts i{
+        font-size: 1.4em;
+    }
+
     #footer-text{
+        font-size: 14px;
         order: 4;
     }
 
@@ -289,6 +298,7 @@ footer img{
         flex-direction: column;
         align-items: center;
         gap: 1.5em;
+        font-size: 20px;
     }
 
 }
