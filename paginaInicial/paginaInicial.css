@@ -38,6 +38,12 @@ img{
     size: 92px;
 }
 
+#botao-navbar-logo{
+    margin: 0%;
+    padding: 0%;
+    border: 0em;
+}
+
 .navbar-list{
     display: flex;
     align-items: center;
@@ -52,6 +58,7 @@ img{
 
 .navbar-list ul a{
     color: var(--marromClaro);
+    white-space: nowrap;
 }
 
 .navbar-list ul a:hover{
