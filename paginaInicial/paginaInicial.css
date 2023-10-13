@@ -18,6 +18,11 @@ img{
     height: 100%;
 }
 
+
+/*HEADER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
 .navbar{
     display: flex;
     position: fixed;
@@ -27,6 +32,20 @@ img{
     padding: 13px 190px 13px 190px;
     gap: 3em; 
     background-color: var(--marromEscuro)
+}
+
+
+@media(min-width: 1706px){
+    .navbar{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        height: 77px;
+        padding: 13px 420px 13px 420px;
+        gap: 3em; 
+        background-color: var(--marromEscuro)
+    }
 }
 
 .navbar-logo img{
@@ -47,6 +66,7 @@ img{
 .navbar-list{
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .navbar-list ul{
@@ -130,6 +150,11 @@ img{
     }
 }
 
+
+/*MAIN --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
 main{
     min-width: 300px;
     max-width: 1536px;
@@ -197,6 +222,11 @@ button:hover{
     border: 3px solid var(--marromEscuro);
     cursor: pointer;
 }
+
+
+/*FOOTER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
 
 footer{
     height: 350px;
