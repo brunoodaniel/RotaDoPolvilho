@@ -144,54 +144,46 @@ img{
     }
 }
 
-
 /*MAIN --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
-
 main{
-    min-width: 300px;
-    max-width: 1536px;
-    margin: auto;
+    padding-top: 300px;
 }
 
-#container-main{
-    height: 800px;
-    padding: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+#carouselExampleIndicators {
+    max-width: 769px; 
+    height: 512px;
+    margin: auto;/* Centralize o carrossel na página */
+  }
+  
+  .carousel-inner {
+    border-radius: 10px; 
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 70px; 
+    width: 70px; 
+    background-size: 100%, 100%; 
+   
+  }
+  
+  .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.486);
+  }
+  
+  .carousel-indicators .active {
+    background-color: white; 
+  }
 
-}
-
-#container-main img{
-    width: 769px;
-    height: 550px;
-    margin: auto;
-    border-radius: 10px;
-    
-}
-
-.hero-text{
-    width: 600px;
-}
-
-.hero-text h1{
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-    white-space: nowrap;
-
-}
-
-.hero-text p{
-    font-size: 1rem;
-    margin-bottom: 200px;
-    white-space: nowrap;
-}
 
 button{
     padding: 1em, 2rem, 1.1em;

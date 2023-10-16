@@ -12,6 +12,20 @@ var frases = [
       var slideIndex = $('.carousel-item.active').index();
       tituloExterno.textContent = frases[slideIndex].titulo;
       subtituloExterno.textContent = frases[slideIndex].subtitulo;
+
+      switch(slideIndex) {
+        case 0:
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../paginaInicial/paginaInicial.html";');
+            break;
+        case 1:
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../mapa/mapa.html";');
+            break;
+        case 2:
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../galeria/galeria.html";');
+            break;
+        default:
+            saibaMaisBtn.removeAttribute('onclick');
+    }
     });
   });
   
