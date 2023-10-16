@@ -22,36 +22,26 @@ img{
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
-
 .navbar{
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
     height: 77px;
-    padding: 13px 190px 13px 190px;
+    width: 100vw;
+    padding: 13px 170px 13px 170px;
     gap: 3em; 
     background-color: var(--marromEscuro)
 }
 
-
-@media(min-width: 1706px){
-    .navbar{
-        display: flex;
-        position: fixed;
-        justify-content: space-between;
-        align-items: center;
-        height: 77px;
-        padding: 13px 420px 13px 420px;
-        gap: 3em; 
-        background-color: var(--marromEscuro)
-    }
+.navbar-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .navbar-logo img{
     display: flex;
-    align-items: center;
-    text-align: center;
     margin-top: 4px;
     width: 92px;
     size: 92px;
@@ -74,11 +64,14 @@ img{
     display: flex;
     text-align: center;
     gap: 3em;
+    padding-right: 300px;
+
 }
 
 .navbar-list ul a{
     color: var(--marromClaro);
     white-space: nowrap;
+
 }
 
 .navbar-list ul a:hover{
@@ -89,6 +82,7 @@ img{
 #burguer{
     display: none;
     color: var(--marromClaro);
+    padding-right: 180px;
 }
 
 
@@ -339,154 +333,3 @@ footer img{
     }
 
 }
-
-
-
-
-
-
-/*
-
- #footer-container, #footer-navbar{
-        
-    }
-
-footer{
-    height: 400px;
-    background-color: var(--marromEscuro);
-}
-
-#container-footer{
-    height: 350px;
-    padding: 20px;
-    margin-top: 4px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-footer img{
-    align-items: center;
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    margin: 0%;
-}
-
-.footer-text{
-    color: white;
-    margin: 200px;
-    text-align: justify;
-    position: relative;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*{
-    margin: 0em;
-    padding: 0em;
-}
-
-body, html{
-    background: rgba(255, 253, 247, 0.80);
-}
-
-
-header {
-    display: flex;
-    width: 1920px;
-    height: 115px;
-    padding: 1em 1em 1em 13.5em;
-    align-items: center;
-    gap: 6.6em;
-    flex-shrink: 0;
-    background: #806753;
-}
-
-.navbar-logo img {
-    width: 94px;
-    height: 94px;
-    flex-shrink: 0;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
-
-menu {
-    display: flex;
-    gap: 3em;
-}
-
-menu a {
-    color: #FFCEA6;
-    text-decoration: none;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.5em;
-}
-
-menu a:hover {  
-    color: #000000;
-}
-
-#Hero-Section{
-    width: 1920px;
-    height: 1150px;
-    padding: 10px;
-}
-
-article h1{
-    padding-bottom: 20px;
-}
-
-article p{
-    margin-bottom: 15px;
-    text-indent: 20px;
-}
-#wallpaper{ 
-    background: #806753;
-    width: 843.034px;
-    height: 1003.92px;
-    border-radius: 10px;
-    margin-left: 1200px;
-    position: relative;
-
-}
-#FotoPaoDeQueijo{
-    width: 70px;
-    height: 73px;
-    position: absolute;
-    top: 270px;
-    left: 850px;
-    border-radius: 10px;
-
-}
-
-/*margin-top: 10px;
-border-radiu
