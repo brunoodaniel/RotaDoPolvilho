@@ -1,39 +1,39 @@
-/* Estilos personalizados para o carrossel */
+
 body{
     background-color: grey;
 }
 
 #carouselExampleIndicators {
-    max-width: 769px; /* Defina a largura máxima do carrossel */
+    max-width: 769px; 
     height: 512px;
-    margin: auto; /* Centralize o carrossel na página */
+    margin: auto;
   }
   
   .carousel-inner {
-    border-radius: 10px; /* Adicione bordas arredondadas aos itens do carrossel */
+    border-radius: 10px;
   }
   
   .carousel-item {
-    text-align: center; /* Centralize o conteúdo dentro dos itens do carrossel */
+    text-align: center; 
   }
   
   .carousel-control-prev, .carousel-control-next {
-    width: 10%; /* Defina a largura dos controles de navegação esquerda/direita */
+    width: 10%; 
   }
   
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 70px; /* Ajuste a altura dos ícones de navegação */
-    width: 70px; /* Ajuste a largura dos ícones de navegação */
-    background-size: 100%, 100%; /* Garanta que os ícones estejam dimensionados corretamente */
+    height: 70px; 
+    width: 70px; 
+    background-size: 100%, 100%; 
    
   }
   
   .carousel-indicators li {
-    background-color: rgba(255, 255, 255, 0.486); /* Cor de fundo para os indicadores do carrossel */
+    background-color: rgba(255, 255, 255, 0.486);
   }
   
   .carousel-indicators .active {
-    background-color: white; /* Cor de fundo para o indicador ativo do carrossel */
+    background-color: white; 
   }
 
   

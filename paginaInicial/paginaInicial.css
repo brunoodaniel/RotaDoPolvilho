@@ -42,7 +42,6 @@ img{
 
 .navbar-logo img{
     display: flex;
-    margin-top: 4px;
     width: 92px;
     size: 92px;
 }
@@ -51,6 +50,7 @@ img{
     margin: 0%;
     padding: 0%;
     border: 0em;
+    background-color: var(--marromEscuro);
 }
 
 .navbar-list{
