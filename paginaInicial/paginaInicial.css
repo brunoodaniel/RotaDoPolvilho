@@ -1,10 +1,10 @@
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 :root{
@@ -105,7 +105,7 @@ img{
     cursor: pointer;
 }
 
-@media(max-width: 1535px){
+@media(max-width: 1199px){
     .navbar{
         padding: 13px 80px 13px 80px;
         gap: 3em; 
@@ -159,6 +159,8 @@ main{
   
   .carousel-inner {
     border-radius: 10px; 
+    height: 769px;
+    width: 700px;
   }
   
   .carousel-item {
