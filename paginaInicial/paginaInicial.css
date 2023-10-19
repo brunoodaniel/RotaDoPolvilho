@@ -1,10 +1,10 @@
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 :root{
@@ -22,22 +22,25 @@ img{
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
-.navbar{
+#navbar{
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 77px;
+    height: auto;
     width: 100vw;
-    padding: 13px 170px 13px 170px;
-    gap: 3em; 
-    background-color: var(--marromEscuro)
+    background-color: var(--marromEscuro);
+    z-index: 999;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .navbar-logo{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 10em ;
+
 }
 
 .navbar-logo img{
@@ -57,6 +60,7 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
+    padding-left: 70px;
 }
 
 .navbar-list ul{
@@ -65,7 +69,7 @@ img{
     text-align: center;
     gap: 3em;
     padding-right: 300px;
-
+    margin: 0;
 }
 
 .navbar-list ul a{
@@ -104,10 +108,19 @@ img{
     color: white;
     cursor: pointer;
 }
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 6em;
+    }
+}
 
-@media(max-width: 1535px){
-    .navbar{
-        padding: 13px 80px 13px 80px;
+@media(max-width: 1250px){
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
         gap: 3em; 
         position: relative;
     }
@@ -116,13 +129,21 @@ img{
         display: none;
     }
 
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
     #burguer{
         display: flex;
     }
 
     .mobile-menu{
         background-color: var(--marromEscuro);
-        height: 385px;
+        height: 26.5em;
     }
 
     .mobile-menu ul{
@@ -130,6 +151,7 @@ img{
         flex-direction: column;
         text-align: center;
         gap: 1em;
+
     }
 
     .mobile-menu ul a{
