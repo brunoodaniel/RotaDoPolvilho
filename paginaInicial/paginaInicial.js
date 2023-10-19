@@ -7,7 +7,7 @@ function menuShow(){
         menuMobile.classList.add('open');
     }
 }
-
+  
 var frases = [
     { titulo: "Título 1", subtitulo: "Subtítulo 1" },
     { titulo: "Título 2", subtitulo: "Subtítulo 2" },
