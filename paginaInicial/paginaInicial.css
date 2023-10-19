@@ -105,7 +105,7 @@ img{
     cursor: pointer;
 }
 
-@media(max-width: 1199px){
+@media(max-width: 1534px){
     .navbar{
         padding: 13px 80px 13px 80px;
         gap: 3em; 
@@ -154,7 +154,7 @@ main{
 #carouselExampleIndicators {
     max-width: 769px; 
     height: 512px;
-    margin: auto;/* Centralize o carrossel na página */
+    margin: auto;
   }
   
   .carousel-inner {
