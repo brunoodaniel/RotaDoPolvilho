@@ -164,44 +164,57 @@ img{
     .open{
         display: block;
     }
+
 }
 
 /*MAIN --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
 main{
-    padding-top: 300px;
+    padding-top: 250px;
 }
 
 #custom-background {
     display: flex;
     width: 43em;
-    height: 40em;
-    background: #806753;
+    height: 37em;
+    background: var(--marromEscuro);
     position: absolute;
-    top: 200px;
-    right: 200px;
+    top: 12.5em;    
+    right: 12.5em;
     z-index: -1;
 }
 
-#subtituloExterno{
+#hash-paginainicial{
+    height: 5px;
+    width: 250px;
+    background-color: var(--marromEscuro);
+}
+
+#tituloExterno{
+    white-space: nowrap;
     padding-top: 20px;
+    color: var(--marromEscuro);
+    font-size: 2.3em;
+}
+
+#subtituloExterno{
+    white-space: nowrap;
+    padding-top: 20px;
+    color: var(--marromEscuro);
+    font-size: 1.2em;
 }
 
 #carouselExampleIndicators {
-    max-width: 769px; 
-    height: 512px;
+    width: 600px; 
+    height: 435px;
     margin: auto;
-    padding-right: 100px;
   }
 
-  .carousel-inner {
-    height: 769px;
-    width: 700px;
-  }
-  
   .carousel-item {
     text-align: center;
+    width: 600px;
+    height: 420px;
   }
   
   .carousel-control-prev, .carousel-control-next {
@@ -215,9 +228,8 @@ main{
   }
 
   .carousel-indicators{
-    padding-bottom: 30px;
-    margin-left: 15em;
-  }
+    margin-left: 5em;
+    }
   
   .carousel-indicators li {
     background-color: rgba(255, 255, 255, 0.486);
@@ -237,7 +249,7 @@ main{
     font-size: 1.3em;
     text-transform: uppercase;
     text-align: center;
-    box-shadow: 0em, -0.2em 0em #FFCEA6 inset;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
     color: var(--marromClaro);
     padding-left: 5px;
     padding-right: 5px;
@@ -254,6 +266,81 @@ main{
     cursor: pointer;
 }
 
+.container2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+}
+
+#titulo-texto{
+    margin-top: 200px;
+    text-align: center;
+    color: var(--marromEscuro);
+    font-size: 2em;
+}
+
+#subtitulo-texto{
+    text-align: center;
+    color: var(--marromEscuro);
+}
+
+.paragrafos{
+    text-align: center;
+    width: 900px;
+    font-size: 1em;
+    text-align: justify;
+    padding: 0px 100px 0px 100px;
+    letter-spacing: 1px;
+    line-height: 180%;
+    text-indent: 70px;
+}
+
+#fotomandioca-paginainicial{
+    height: 400px;
+    width: 600px;
+    margin-right: 100px;
+}
+
+#container3{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-panorama{
+    margin-top: 60px;
+    color: var(--marromEscuro);
+    font-size: 2em;
+    text-align: center;
+}
+
+#botao-panorama{
+    text-align: center;
+}
+
+#saibamais-panorama{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    border: var(--marromClaro);
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+    color: var(--marromClaro);
+    white-space: nowrap;
+}
+
+#saibamais-panorama:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------
@@ -277,7 +364,7 @@ footer{
     text-align: center;
 }
 
-footer img{
+#logo-footer{
     height: 200px;
     width: 200px;
     margin: auto;

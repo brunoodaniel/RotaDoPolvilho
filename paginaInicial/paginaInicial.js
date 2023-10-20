@@ -9,7 +9,7 @@ function menuShow(){
 }
   
 var frases = [
-    { titulo: "Rota turistica do polvilho", subtitulo: "Tradição ourense" },
+    { titulo: "Rota Turística do Polvilho", subtitulo: "Tradição ourense" },
     { titulo: "O caminho fala por si", subtitulo: "A rota e seus mais belos atrativos" },
     { titulo: "Venha viver essa experiencia", subtitulo: "Agencias credenciadas" }
   ];
@@ -37,5 +37,11 @@ var frases = [
             saibaMaisBtn.removeAttribute('onclick');
     }
     });
+  });
+
+  var botao = document.getElementById('saibamais-panorama');
+    
+  botao.addEventListener('click', function() {
+      window.location.href = '../galeria/galeria.html';
   });
   
