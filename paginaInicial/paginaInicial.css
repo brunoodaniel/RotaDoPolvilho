@@ -173,15 +173,29 @@ main{
     padding-top: 300px;
 }
 
+#custom-background {
+    display: flex;
+    width: 43em;
+    height: 40em;
+    background: #806753;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    z-index: -1;
+}
+
+#subtituloExterno{
+    padding-top: 20px;
+}
 
 #carouselExampleIndicators {
     max-width: 769px; 
     height: 512px;
     margin: auto;
+    padding-right: 100px;
   }
-  
+
   .carousel-inner {
-    border-radius: 10px; 
     height: 769px;
     width: 700px;
   }
@@ -198,7 +212,11 @@ main{
     height: 70px; 
     width: 70px; 
     background-size: 100%, 100%; 
-   
+  }
+
+  .carousel-indicators{
+    padding-bottom: 30px;
+    margin-left: 15em;
   }
   
   .carousel-indicators li {
@@ -209,11 +227,11 @@ main{
     background-color: white; 
   }
 
-  
-button{
-    padding: 1em, 2rem, 1.1em;
+  #saibaMaisBtn{
+    margin-top: 200px;
+    padding: 6em, 2rem, 1.1em;
     border-radius: 4px;
-    border: none;
+    border: var(--marromClaro);
     background-color: var(--marromEscuro);
     font-weight: 800;
     font-size: 1.3em;
@@ -225,12 +243,14 @@ button{
     padding-right: 5px;
     min-width: 30px;
     max-width: 153px;
-}
+    white-space: nowrap;
+  }
 
-button:hover{
+
+#saibaMaisBtn:hover{
     background-color: transparent;
     color: var(--marromEscuro);
-    border: 3px solid var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
     cursor: pointer;
 }
 

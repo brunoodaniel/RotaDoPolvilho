@@ -9,9 +9,9 @@ function menuShow(){
 }
   
 var frases = [
-    { titulo: "Título 1", subtitulo: "Subtítulo 1" },
-    { titulo: "Título 2", subtitulo: "Subtítulo 2" },
-    { titulo: "Título 3", subtitulo: "Subtítulo 3" }
+    { titulo: "Rota turistica do polvilho", subtitulo: "Tradição ourense" },
+    { titulo: "O caminho fala por si", subtitulo: "A rota e seus mais belos atrativos" },
+    { titulo: "Venha viver essa experiencia", subtitulo: "Agencias credenciadas" }
   ];
   
   $(document).ready(function(){
