@@ -290,7 +290,7 @@ main{
 .paragrafos{
     text-align: center;
     width: 900px;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: justify;
     padding: 0px 100px 0px 100px;
     letter-spacing: 1px;
@@ -410,8 +410,8 @@ footer{
 @media(max-width: 1023px){
     footer{
         display: flex;
-        height: 410px;
-        gap: 3rem;
+        height: 430px;
+        gap: 1rem;
     }
 
 
@@ -443,7 +443,6 @@ footer{
         order: 4;
     }
 
-    
     #footer-navbar{
         width: 50%;
         order: 5;
@@ -457,4 +456,18 @@ footer{
         font-size: 20px;
     }
 
+}
+
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 4em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 5em;
+    }
 }

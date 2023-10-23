@@ -1,10 +1,10 @@
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 :root{
@@ -22,22 +22,25 @@ img{
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
-.navbar{
+#navbar{
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 77px;
+    height: auto;
     width: 100vw;
-    padding: 13px 170px 13px 170px;
-    gap: 3em; 
-    background-color: var(--marromEscuro)
+    background-color: var(--marromEscuro);
+    z-index: 999;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .navbar-logo{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 10em ;
+
 }
 
 .navbar-logo img{
@@ -57,6 +60,7 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
+    padding-left: 70px;
 }
 
 .navbar-list ul{
@@ -65,7 +69,7 @@ img{
     text-align: center;
     gap: 3em;
     padding-right: 300px;
-
+    margin: 0;
 }
 
 .navbar-list ul a{
@@ -104,114 +108,57 @@ img{
     color: white;
     cursor: pointer;
 }
-
-@media(max-width: 1535px){
-    .navbar{
-        padding: 13px 80px 13px 80px;
-        gap: 3em; 
-        position: relative;
-    }
-
-    .navbar-list ul{
-        display: none;
-    }
-
-    #burguer{
-        display: flex;
-    }
-
-    .mobile-menu{
-        background-color: var(--marromEscuro);
-        height: 385px;
-    }
-
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        gap: 1em;
+        margin-left: 6em;
     }
-
-    .mobile-menu ul a{
-        display: block;
-        padding-top: 1.2rem;
-        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
-        border-radius: 0%;
-    }
-
-    .open{
-        display: block;
-    }
+    
 }
+
 
 /*MAIN --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
 main{
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
-
-#carouselExampleIndicators {
-    max-width: 769px; 
-    height: 512px;
-    margin: auto;
-  }
-  
-  .carousel-inner {
-    border-radius: 10px; 
-    height: 769px;
-    width: 700px;
-  }
-  
-  .carousel-item {
-    text-align: center;
-  }
-  
-  .carousel-control-prev, .carousel-control-next {
-    width: 10%;
-  }
-  
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 70px; 
-    width: 70px; 
-    background-size: 100%, 100%; 
-   
-  }
-  
-  .carousel-indicators li {
-    background-color: rgba(255, 255, 255, 0.486);
-  }
-  
-  .carousel-indicators .active {
-    background-color: white; 
-  }
-
-  
-button{
-    padding: 1em, 2rem, 1.1em;
-    border-radius: 4px;
-    border: none;
-    background-color: var(--marromEscuro);
-    font-weight: 800;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-align: center;
-    box-shadow: 0em, -0.2em 0em #FFCEA6 inset;
-    color: var(--marromClaro);
-    padding-left: 5px;
-    padding-right: 5px;
-    min-width: 30px;
-    max-width: 153px;
+#container-mapa-main{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1.7em;
 }
 
-button:hover{
-    background-color: transparent;
+#titulo-mapa{
+    width: 594px;
     color: var(--marromEscuro);
-    border: 3px solid var(--marromEscuro);
-    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 2px;
 }
 
+#barralateral-mapa{
+    height: 80px;
+    width: 5px;
+    background-color: var(--marromEscuro);
+}
+
+#mapa{
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa img{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------
@@ -219,6 +166,7 @@ button:hover{
 
 
 footer{
+    margin-top: 100px;
     height: 350px;
     background-color: var(--marromEscuro);
 }
@@ -235,7 +183,7 @@ footer{
     text-align: center;
 }
 
-footer img{
+#logo-footer{
     height: 200px;
     width: 200px;
     margin: auto;
@@ -278,11 +226,83 @@ footer img{
     color: var(--marromClaro);
 }
 
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 4em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 5em;
+    }
+}
+
+@media(max-width: 1250px){
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
+        gap: 3em; 
+        position: relative;
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu{
+        background-color: var(--marromEscuro);
+        height: 26.5em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.4em;
+
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    
+main{
+    padding-top: 100px;
+}
+
+}
+
 @media(max-width: 1023px){
     footer{
         display: flex;
-        height: 410px;
-        gap: 3rem;
+        height: 430px;
+        gap: 1rem;
     }
 
 
@@ -313,12 +333,11 @@ footer img{
         font-size: 14px;
         order: 4;
     }
-
     
     #footer-navbar{
         width: 50%;
         order: 5;
-        margin: 30px 34px 30px 30px;
+        margin: 30px 34px 30px 30px;    
     }
 
     #footer-navbar ul{
@@ -328,4 +347,29 @@ footer img{
         font-size: 20px;
     }
 
+}
+
+@media(max-width: 767px){
+main{
+    padding-top: 80px;
+}
+
+#titulo-mapa{
+    width: 411px;
+    color: var(--marromEscuro);
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+#barralateral-mapa{
+    height: 60px;
+    width: 3px;
+    background-color: var(--marromEscuro);
+}
+
+#mapa{
+    display: none;
+    /*CODIGO PRO DOWNLOAD DO MAPA AQUI*/
+
+}
 }
