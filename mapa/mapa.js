@@ -7,4 +7,10 @@ function menuShow(){
         menuMobile.classList.add('open');
     }
 }
+
+var botao = document.getElementById('consultar-mapa');
+  botao.addEventListener('click', function() {
+    var urlDaImagem = '../imagens/Imagens gerais/Mapa Rota do Polvilho.png';
+    window.open(urlDaImagem, '_blank');
+  });
   
