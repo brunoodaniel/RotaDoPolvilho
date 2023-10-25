@@ -7,6 +7,11 @@
     text-decoration: none !important;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 :root{
     --marromEscuro: #806753;
     --marromClaro: #FFCEA6;
