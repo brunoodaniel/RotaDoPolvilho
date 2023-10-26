@@ -6,5 +6,4 @@ function menuShow(){
     else{
         menuMobile.classList.add('open');
     }
-}
-  
+} 

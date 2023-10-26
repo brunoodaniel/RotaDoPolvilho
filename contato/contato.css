@@ -1,10 +1,15 @@
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif ;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
 }
 
 :root{
@@ -22,22 +27,25 @@ img{
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
-.navbar{
+#navbar{
     display: flex;
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 77px;
+    height: auto;
     width: 100vw;
-    padding: 13px 170px 13px 170px;
-    gap: 3em; 
-    background-color: var(--marromEscuro)
+    background-color: var(--marromEscuro);
+    z-index: 999;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .navbar-logo{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 10em ;
+
 }
 
 .navbar-logo img{
@@ -57,6 +65,7 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
+    padding-left: 70px;
 }
 
 .navbar-list ul{
@@ -65,7 +74,7 @@ img{
     text-align: center;
     gap: 3em;
     padding-right: 300px;
-
+    margin: 0;
 }
 
 .navbar-list ul a{
@@ -105,53 +114,72 @@ img{
     cursor: pointer;
 }
 
-@media(max-width: 1535px){
-    .navbar{
-        padding: 13px 80px 13px 80px;
-        gap: 3em; 
-        position: relative;
-    }
-
-    .navbar-list ul{
-        display: none;
-    }
-
-    #burguer{
-        display: flex;
-    }
-
-    .mobile-menu{
-        background-color: var(--marromEscuro);
-        height: 385px;
-    }
-
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 1em;
-    }
-
-    .mobile-menu ul a{
-        display: block;
-        padding-top: 1.2rem;
-        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
-        border-radius: 0%;
-    }
-
-    .open{
-        display: block;
-    }
-}
-
 /*MAIN --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
 main{
-    padding-top: 300px;
+    padding-top: 180px;
 }
 
+#main-container{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
 
+#titulo-contato{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    color: #806753;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+#subtitulo-contato{
+    text-align: center;
+    margin: auto;
+    color: #847D7D;
+    font-family: Poppins;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+#lado-esquerdo{
+    display: grid;
+    background-color: var(--marromEscuro);
+    color: white;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+}
+
+#lado-direito{
+    display: grid;
+    color: var(--marromEscuro);
+    height: 500px;
+    width: 100%;
+    align-items: center;
+}
+
+.redes-sociais{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.icones{
+    text-align: right;
+    padding: 9px 30px 9px 30px;
+    font-size: 2em;
+}
+
+.informações{
+    font-size: 1.2em;
+}
 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------
@@ -159,6 +187,7 @@ main{
 
 
 footer{
+    margin-top: 100px;
     height: 350px;
     background-color: var(--marromEscuro);
 }
@@ -175,7 +204,7 @@ footer{
     text-align: center;
 }
 
-footer img{
+#logo-footer{
     height: 200px;
     width: 200px;
     margin: auto;
@@ -218,11 +247,86 @@ footer img{
     color: var(--marromClaro);
 }
 
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 4em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 5em;
+    }
+}
+
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 6em;
+    }
+    
+}
+
+@media(max-width: 1250px){
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
+        gap: 3em; 
+        position: relative;
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu{
+        background-color: var(--marromEscuro);
+        height: 26.5em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.4em;
+
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
+    }
+
+    .open{
+        display: block;
+    }
+
+}
+
 @media(max-width: 1023px){
     footer{
         display: flex;
-        height: 410px;
-        gap: 3rem;
+        height: 430px;
     }
 
 
@@ -234,10 +338,11 @@ footer img{
        margin: 30px 30px 20px 70px;
     }
 
-    footer img{
+    #logo-footer{
         height: 150px;
         width: 150px;
         order: 2;
+        align-items: center;
     }
 
     #footer-contacts{
@@ -253,12 +358,11 @@ footer img{
         font-size: 14px;
         order: 4;
     }
-
     
     #footer-navbar{
         width: 50%;
         order: 5;
-        margin: 30px 34px 30px 30px;
+        margin: 30px 34px 30px 30px;    
     }
 
     #footer-navbar ul{
@@ -267,5 +371,125 @@ footer img{
         gap: 1.5em;
         font-size: 20px;
     }
+
+}
+
+@media(max-width: 767px){
+#navbar{
+    gap: 2em;
+}  
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    height: 350px;
+}
+
+
+#footer-container{
+   grid-template-columns: min-content;
+   gap: 3rem;
+   width: 50%;
+   order: 1;
+   margin: 30px 30px 20px 70px;
+}
+
+#logo-footer{
+    height: 100px;
+    width: 100px;
+    order: 2;
+    align-items: center;
+}
+
+#footer-contacts{
+    order: 3;  
+}
+
+#footer-contacts i{
+    font-size: 1.2em;
+}
+
+#footer-text{
+    font-size: 10px;
+    order: 4;
+}
+
+#footer-navbar{
+    width: 50%;
+    order: 5;
+    margin: 30px 34px 30px 30px;
+}
+
+#footer-navbar ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    font-size: 15px;
+}
+
+
+
+
+
+
+main{
+    padding-top: 80px;
+}
+
+#titulo-contato{
+    text-align: center;
+    margin: auto;
+    color: #806753;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+#subtitulo-contato{
+    padding-top: 15px;
+    text-align: center;
+    margin: auto;
+    color: #847D7D;
+    font-family: Poppins;
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    width: 470px;
+}
+
+#main-container{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#lado-esquerdo{
+    display: grid;
+    background-color: var(--marromEscuro);
+    color: white;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+}
+
+#lado-direito{
+    display: grid;
+    color: var(--marromEscuro);
+    height: 400px;
+    width: 100%;
+    align-items: center;
+}
+
+.icones{
+    text-align: center;
+    padding: 9px 30px 9px 30px;
+    font-size: 2em;
+}
+
+#email-contato{
+    
+}
 
 }
