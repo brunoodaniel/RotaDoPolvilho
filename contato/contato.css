@@ -489,7 +489,7 @@ main{
 }
 
 #email-contato{
-    
+    word-break: break-all;
 }
 
 }
