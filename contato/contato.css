@@ -290,7 +290,6 @@ footer{
         justify-content: center;
         text-align: center;
         margin-left: 5em;
-    
     }
 
     #burguer{
@@ -441,7 +440,7 @@ main{
     margin: auto;
     color: #806753;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; 
@@ -452,11 +451,11 @@ main{
     margin: auto;
     color: #847D7D;
     font-family: Poppins;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
-    width: 470px;
+    width: 380px;
 }
 
 #main-container{
@@ -482,14 +481,24 @@ main{
     align-items: center;
 }
 
+.informações{
+    font-size: 0.9em;
+}
+
 .icones{
     text-align: center;
     padding: 9px 30px 9px 30px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #email-contato{
     word-break: break-all;
+    max-width: 180px;
+}
+
+#endereço-contato{
+    word-break: break-all;
+    max-width: 180px;
 }
 
 }
