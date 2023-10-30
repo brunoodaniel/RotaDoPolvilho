@@ -148,14 +148,26 @@ main{
     font-size: 2em;
     text-align: left;
     width: 324px;
-   
 }
 
 #subtitulo{
     font-size: 1.3em;
     text-align: left;
- 
+}
 
+.container2{
+    padding-top: 30px;
+}
+
+.paragrafos{
+    display: flex;
+    width: 1000px;
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 180%;
+    text-indent: 70px;
+    margin: auto;
 }
 
 
@@ -238,6 +250,11 @@ footer{
     #footer-navbar ul{
         gap: 5em;
     }
+
+    .paragrafos{
+        width: 1300px;
+        font-size: 1.5em;
+    }
 }
 
 @media(max-width: 1400px){
@@ -301,7 +318,34 @@ footer{
     .open{
         display: block;
     }
+    
+    .barralateral-pratosTipicos{
+        height: 50px;
+        width: 4.5px;
+        background-color: white;
+    }
+    
+    #titulo{
+        font-size: 1.5em;
+        text-align: left;
+        width: 243px;
+    }
+    
+    #subtitulo{
+        font-size: 1.2em;
+        text-align: left;
+    }
 
+    .paragrafos{
+        display: flex;
+        width: 800px;
+        font-size: 1.1em;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+        margin: auto;
+    }
 }
 
 @media(max-width: 1023px){
@@ -355,10 +399,38 @@ footer{
 
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
 #navbar{
     gap: 2em;
 }  
+
+.barralateral-pratosTipicos{
+    height: 45px;
+    width: 4.5px;
+    background-color: white;
+}
+
+#titulo{
+    font-size: 1.3em;
+    text-align: left;
+    width: 211px;
+}
+
+#subtitulo{
+    font-size: 1em;
+    text-align: left;
+}
+
+.paragrafos{
+    display: flex;
+    width: 380px;
+    font-size: 1em;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 180%;
+    text-indent: 70px;
+    margin: auto;    
+}
 
 footer{
     margin-top: 30px;
