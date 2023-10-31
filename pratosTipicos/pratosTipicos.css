@@ -170,6 +170,50 @@ main{
     margin: auto;
 }
 
+.container-livro{
+    padding-top: 30px;
+}
+
+.nome-livro{
+    display: flex;
+    font-size: 2.3em;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.receita-livro{
+    margin-top: 20px;
+    display: flex;
+    font-size: 1.3em;
+    justify-content: center;
+}
+
+.botao-download-livro{
+    margin-top: 20px;
+}
+
+.download{
+    display: flex;
+    border-radius: 4px;
+    padding: 5px;
+    border: var(--marromClaro);
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+    color: var(--marromClaro);
+    white-space: nowrap;
+    margin: auto;
+}
+
+.download:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
