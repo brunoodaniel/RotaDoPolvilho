@@ -139,7 +139,7 @@ main{
 }
 
 .barralateral-pratosTipicos{
-    height: 70px;
+    height: 80px;
     width: 5px;
     background-color: white;
 }
@@ -170,49 +170,61 @@ main{
     margin: auto;
 }
 
-.container-livro{
-    padding-top: 30px;
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-.nome-livro{
+.fotos {
+    position: relative;
+    height: 300px;
+    width: 400px;
+    margin: 0 8px; 
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.fotos a {
+    text-decoration: none;
     display: flex;
-    font-size: 2.3em;
+    align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(60, 60, 60, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
     font-weight: 600;
-}
-
-.receita-livro{
-    margin-top: 20px;
-    display: flex;
-    font-size: 1.3em;
-    justify-content: center;
-}
-
-.botao-download-livro{
-    margin-top: 20px;
-}
-
-.download{
-    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
     border-radius: 4px;
-    padding: 5px;
-    border: var(--marromClaro);
-    background-color: var(--marromEscuro);
-    font-weight: 800;
-    font-size: 1em;
-    text-transform: uppercase;
-    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
-    color: var(--marromClaro);
-    white-space: nowrap;
-    margin: auto;
 }
 
-.download:hover{
-    background-color: transparent;
-    color: var(--marromEscuro);
-    outline: 2px solid var(--marromEscuro);
-    cursor: pointer;
+
+
+.fotos:hover .texto {
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1.2); 
 }
+
+.fotos:hover img {
+    filter: blur(3px); 
+}
+
 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------
@@ -448,9 +460,13 @@ footer{
     gap: 2em;
 }  
 
+.container1 img{
+    height: 100px;
+}
+
 .barralateral-pratosTipicos{
-    height: 45px;
-    width: 4.5px;
+    height: 60px;
+    width: 3.5px;
     background-color: white;
 }
 
@@ -474,6 +490,29 @@ footer{
     line-height: 180%;
     text-indent: 70px;
     margin: auto;    
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.fotos {
+    height: 300px;
+    width: 380px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.texto {
+    font-size: 16px;
+    
 }
 
 footer{
