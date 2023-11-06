@@ -65,14 +65,14 @@ img{
     display: flex;
     align-items: center;
     margin: auto;
-    padding-left: 70px;
+    padding-left: 110px;
 }
 
 .navbar-list ul{
     font-size: 22px;
     display: flex;
     text-align: center;
-    gap: 3em;
+    gap: 4em;
     padding-right: 300px;
     margin: 0;
 }
@@ -345,7 +345,7 @@ footer{
     display: flex;
     font-size: 22px;
     text-align: center;
-    gap: 3em;
+    gap: 5.5em;
 }
 
 #footer-navbar ul a{
@@ -364,13 +364,13 @@ footer{
 @media(min-width: 1900px){
     .navbar-list ul{
         font-size: 25px;
-        gap: 4em;
+        gap: 5.5em;
         padding-right: 200px;
 
     }
 
     #footer-navbar ul{
-        gap: 5em;
+        gap: 7em;
     }
 }
 
@@ -474,7 +474,7 @@ footer{
 
     .mobile-menu{
         background-color: var(--marromEscuro);
-        height: 26.5em;
+        height: 23em;
     }
 
     .mobile-menu ul{
@@ -559,7 +559,7 @@ footer{
     #footer-navbar ul{
         flex-direction: column;
         align-items: center;
-        gap: 1.5em;
+        gap: 1.7em;
         font-size: 20px;
     }
 }
@@ -772,7 +772,7 @@ footer{
     #footer-navbar ul{
         flex-direction: column;
         align-items: center;
-        gap: 1.5em;
+        gap: 2em;
         font-size: 15px;
     }
 
