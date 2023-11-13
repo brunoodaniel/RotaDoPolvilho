@@ -1,39 +1,725 @@
 
-body{
-    background-color: grey;
+*{
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
 }
 
-#carouselExampleIndicators {
-    max-width: 769px; 
-    height: 512px;
-    margin: auto;
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+
+:root{
+  --marromEscuro: #806753;
+  --marromClaro: #FFCEA6;
+}
+
+img{
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*HEADER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+#navbar{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  background-color: var(--marromEscuro);
+  z-index: 999;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navbar-logo{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10em ;
+
+}
+
+.navbar-logo img{
+  display: flex;
+  width: 92px;
+  size: 92px;
+}
+
+#botao-navbar-logo{
+  margin: 0%;
+  padding: 0%;
+  border: 0em;
+  background-color: var(--marromEscuro);
+}
+
+.navbar-list{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-left: 110px;
+}
+
+.navbar-list ul{
+  font-size: 22px;
+  display: flex;
+  text-align: center;
+  gap: 4em;
+  padding-right: 300px;
+  margin: 0;
+}
+
+.navbar-list ul a{
+  color: var(--marromClaro);
+  white-space: nowrap;
+
+}
+
+.navbar-list ul a:hover{
+  color: white;
+  cursor: pointer;
+}
+
+#burguer{
+  display: none;
+  color: var(--marromClaro);
+  padding-right: 180px;
+}
+
+
+#burguer:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  display: none;
+  color: var(--marromClaro);
+}
+
+.mobile-menu ul a{
+  color: var(--marromClaro);
+}
+
+.mobile-menu ul a:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/*MAIN --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+main{
+  padding-top: 200px;
+}
+
+#container-titulo-sobreNos{
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1.7em;
+}
+
+#titulo-e-subtitulo{
+  gap: 3em;
+}
+
+#titulo-sobreNos{
+  width: 418px;
+  color: var(--marromEscuro);
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+#subtitulo-sobreNos{
+  width: 418px;
+  color: var(--marromEscuro);
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+#barralateral-sobreNos{
+  height: 70px;
+  width: 4.5px;
+  background-color: var(--marromEscuro);
+}
+
+.container-empreendedorismos{
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 80px;
+  background-color: var(--marromEscuro);
+}
+
+/* SITIO CONQUISTA----------------------------------------------------------------------------------------------------------------*/
+
+#container01-sitio-conquista{
+  padding: 40px;
+}
+
+#container01-sitio-conquista img{
+  height: 300px;
+  width: 300px;
+}
+
+#container01-sitio-conquista p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container02-sitio-conquista h1{
+  color: var(--marromClaro);
+  text-align: center;
+}
+
+#texto-sitio-conquista{
+  margin-top: 20px;
+  width: 800px;
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 180%;
+  text-indent: 70px;
+  color: white;
+}
+
+/* POLVILHO TUPGUAR----------------------------------------------------------------------------------------------------------------*/
+
+#container01-polvilho-tupguar{
+  padding: 40px;
+}
+
+#container01-polvilho-tupguar img{
+  height: 300px;
+  width: 430px;
+  background-color: white;
+}
+
+#container01-polvilho-tupguar p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container02-polvilho-tupguar h1{
+  color: var(--marromClaro);
+  text-align: center;
+  margin-top: 35px;
+}
+
+#texto-polvilho-tupguar{
+  margin-top: 20px;
+  width: 800px;
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 180%;
+  text-indent: 70px;
+  color: white;
+}
+
+.botao-visitar-site{
+  text-align: center;
+}
+
+.visitar-site{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 4px 15px 4px 15px;
+  border-radius: 15px;
+  border: black;
+  background-color: white;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  box-shadow: 0em, -0.2em 0em black inset;
+  color: var(--marromEscuro);
+  white-space: nowrap;
+  justify-content: center;
+  justify-content: center;
+}
+
+.visitar-site:hover{
+  background-color: transparent;
+  color: white;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+
+.redes-sociais{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociais i{
+  color: white;
+  font-size: 1.7rem;
+}
+
+.redes-sociais i:hover{
+  color: var(--marromClaro);
+}
+
+/* POLVILHO OURENSE----------------------------------------------------------------------------------------------------------------*/
+
+#container01-polvilho-ourense{
+  padding: 40px;
+}
+
+#container01-polvilho-ourense img{
+  height: 300px;
+  width: 430px;
+  background-color: white;
+}
+
+#container01-polvilho-ourense p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container02-polvilho-ourense h1{
+  color: var(--marromClaro);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#texto-polvilho-ourense{
+  margin-top: 20px;
+  width: 700px;
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 180%;
+  text-indent: 70px;
+  color: white;
+}
+
+.botao-visitar-site{
+  text-align: center;
+}
+
+.visitar-site{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 4px 15px 4px 15px;
+  border-radius: 15px;
+  border: black;
+  background-color: white;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  box-shadow: 0em, -0.2em 0em black inset;
+  color: var(--marromEscuro);
+  white-space: nowrap;
+  justify-content: center;
+  justify-content: center;
+}
+
+.visitar-site:hover{
+  background-color: transparent;
+  color: white;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+
+.redes-sociais{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.redes-sociais i{
+  color: white;
+  font-size: 1.7rem;
+}
+
+.redes-sociais i:hover{
+  color: var(--marromClaro);
+}
+
+/* BIG MINAS----------------------------------------------------------------------------------------------------------------*/
+
+#container01-big-minas{
+  padding: 40px;
+}
+
+#container01-big-minas img{
+  height: 300px;
+  width: 430px;
+  background-color: white;
+}
+
+#container01-big-minas p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container02-big-minas h1{
+  color: var(--marromClaro);
+  text-align: center;
+  margin-top: 35px;
+}
+
+#texto-big-minas{
+  margin-top: 20px;
+  width: 800px;
+  font-size: 1.2em;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 180%;
+  text-indent: 70px;
+  color: white;
+}
+
+.botao-visitar-site{
+  text-align: center;
+}
+
+.visitar-site{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 4px 15px 4px 15px;
+  border-radius: 15px;
+  border: black;
+  background-color: white;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  box-shadow: 0em, -0.2em 0em black inset;
+  color: var(--marromEscuro);
+  white-space: nowrap;
+  justify-content: center;
+  justify-content: center;
+}
+
+.visitar-site:hover{
+  background-color: transparent;
+  color: white;
+  outline: 2px solid white;
+  cursor: pointer;
+}
+
+.redes-sociais{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-sociais i{
+  color: white;
+  font-size: 1.7rem;
+}
+
+.redes-sociais i:hover{
+  color: var(--marromClaro);
+}
+
+
+/*FOOTER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+  margin-top: 100px;
+  height: 350px;
+  background-color: var(--marromEscuro);
+}
+
+#footer-container{
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#footer-text{
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#logo-footer{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+#footer-contacts{
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+
+#footer-contacts i{
+  color: white;
+  font-size: 1.7rem;
+}
+
+#footer-contacts i:hover{
+  color: var(--marromClaro);
+}
+
+#footer-navbar{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#footer-navbar ul{
+  display: flex;
+  font-size: 22px;
+  text-align: center;
+  gap: 5.5em;
+}
+
+#footer-navbar ul a{
+  color: white;
+  white-space: nowrap;
+}
+
+#footer-navbar ul a:hover{
+  color: var(--marromClaro);
+}
+
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+@media(min-width: 1900px){
+  .navbar-list ul{
+      font-size: 25px;
+      gap: 5.5em;
+      padding-right: 200px;
+
+  }
+
+  #footer-navbar ul{
+      gap: 7em;
+  }
+}
+
+@media(max-width: 1400px){
+  .navbar-logo{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 6em;
   }
   
-  .carousel-inner {
-    border-radius: 10px;
+}
+
+@media(max-width: 1250px){
+  #navbar{
+      display: flex;
+      padding: 13px 0 13px 1em;
+      gap: 3em; 
+      position: relative;
   }
-  
-  .carousel-item {
-    text-align: center; 
+
+  .navbar-list ul{
+      display: none;
   }
+
+  .navbar-logo{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 5em;
   
-  .carousel-control-prev, .carousel-control-next {
-    width: 10%; 
   }
-  
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 70px; 
-    width: 70px; 
-    background-size: 100%, 100%; 
-   
+
+  #burguer{
+      display: flex;
   }
-  
-  .carousel-indicators li {
-    background-color: rgba(255, 255, 255, 0.486);
+
+  .mobile-menu{
+      background-color: var(--marromEscuro);
+      height: 23em;
   }
-  
-  .carousel-indicators .active {
-    background-color: white; 
+
+  .mobile-menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 1.4em;
+
+  }
+
+  .mobile-menu ul a{
+      display: block;
+      padding-top: 1.2rem;
+      border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+      border-radius: 0%;
+  }
+
+  .open{
+      display: block;
   }
 
   
+main{
+  padding-top: 100px;
+}
+
+}
+
+@media(max-width: 1023px){
+  footer{
+      display: flex;
+      height: 430px;
+  }
+
+
+  #footer-container{
+     grid-template-columns: min-content;
+     gap: 3rem;
+     width: 50%;
+     order: 1;
+     margin: 30px 30px 20px 70px;
+  }
+
+  #logo-footer{
+      height: 150px;
+      width: 150px;
+      order: 2;
+      align-items: center;
+  }
+
+  #footer-contacts{
+      order: 3;
+      
+  }
+
+  #footer-contacts i{
+      font-size: 1.4em;
+  }
+
+  #footer-text{
+      font-size: 14px;
+      order: 4;
+  }
+  
+  #footer-navbar{
+      width: 50%;
+      order: 5;
+      margin: 30px 34px 30px 30px;    
+  }
+
+  #footer-navbar ul{
+      flex-direction: column;
+      align-items: center;
+      gap: 1.7em;
+      font-size: 20px;
+  }
+
+}
+
+@media(max-width: 768px){
+#navbar{
+  gap: 2em;
+}  
+
+main{
+  padding-top: 50px;
+}
+
+#titulo-mapa{
+  width: 281px;
+  color: var(--marromEscuro);
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+#barralateral-mapa{
+  height: 40px;
+  width: 3px;
+  background-color: var(--marromEscuro);
+}
+
+#mapa{
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#div-consultar-mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  margin-top: 30px;
+  display: flex;
+  height: 350px;
+}
+
+
+#footer-container{
+ grid-template-columns: min-content;
+ gap: 3rem;
+ width: 50%;
+ order: 1;
+ margin: 30px 30px 20px 70px;
+}
+
+#logo-footer{
+  height: 100px;
+  width: 100px;
+  order: 2;
+  align-items: center;
+}
+
+#footer-contacts{
+  order: 3;  
+}
+
+#footer-contacts i{
+  font-size: 1.2em;
+}
+
+#footer-text{
+  font-size: 10px;
+  order: 4;
+}
+
+#footer-navbar{
+  width: 50%;
+  order: 5;
+  margin: 30px 34px 30px 30px;
+}
+
+#footer-navbar ul{
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  font-size: 15px;
+}
+
+}
