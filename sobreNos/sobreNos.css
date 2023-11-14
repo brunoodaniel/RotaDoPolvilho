@@ -582,13 +582,49 @@ footer{
   }
 
   
-main{
-  padding-top: 100px;
-}
+  main{
+    padding-top: 100px;
+  }
+
+  #texto-sitio-conquista{
+    width: 500px;
+  }
+
+  #texto-polvilho-tupguar{
+    width: 500px;
+  }
+
+  #texto-polvilho-ourense{
+    width: 500px;
+  }
+
+  #texto-big-minas{
+    width: 500px;
+  }
 
 }
 
 @media(max-width: 1023px){
+  #texto-sitio-conquista{
+    width: 350px;
+    font-size: 1.1em;
+  }
+
+  #texto-polvilho-tupguar{
+    width: 350px;
+    font-size: 1.1em;
+  }
+
+  #texto-polvilho-ourense{
+    width: 350px;
+    font-size: 1.1em;
+  }
+
+  #texto-big-minas{
+    width: 350px;
+    font-size: 1.1em;
+  }
+
   footer{
       display: flex;
       height: 430px;
@@ -648,30 +684,38 @@ main{
   padding-top: 50px;
 }
 
-#titulo-mapa{
-  width: 281px;
+#container-titulo-sobreNos{
+  gap: 1em;
+}
+
+#titulo-sobreNos{
+  width: 308px;
   color: var(--marromEscuro);
-  font-size: 0.8em;
+  font-size: 1.4em;
   letter-spacing: 2px;
 }
 
-#barralateral-mapa{
-  height: 40px;
+#subtitulo-sobreNos{
+  width: 329px;
+  color: var(--marromEscuro);
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+#barralateral-sobreNos{
+  height: 50px;
   width: 3px;
   background-color: var(--marromEscuro);
 }
 
-#mapa{
-  display: flex;
-  padding-top: 50px;
+.container-empreendedorismos{
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
   align-items: center;
   justify-content: center;
-}
-
-#div-consultar-mapa{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 2em;
+  margin-top: 50px;
+  background-color: var(--marromEscuro);
 }
 
 footer{
@@ -679,7 +723,6 @@ footer{
   display: flex;
   height: 350px;
 }
-
 
 #footer-container{
  grid-template-columns: min-content;
