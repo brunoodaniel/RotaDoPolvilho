@@ -13,4 +13,11 @@ var botao = document.getElementById('consultar-mapa');
     var urlDaImagem = '../imagens/Imagens gerais/Mapa Rota do Polvilho.png';
     window.open(urlDaImagem, '_blank');
   });
+
+var path = "../mapa/mapa.html";
+document.querySelectorAll('ul li a').forEach(function(link) {
+  if (link.getAttribute('href') === path) {
+    link.classList.add('active');
+  }
+});
   

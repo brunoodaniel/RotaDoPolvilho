@@ -7,3 +7,10 @@ function menuShow(){
         menuMobile.classList.add('open');
     }
 }
+
+var path = "../aCidade/aCidade.html"
+document.querySelectorAll('ul li a').forEach(function(link) {
+  if (link.getAttribute('href') === path) {
+    link.classList.add('active');
+  }
+});

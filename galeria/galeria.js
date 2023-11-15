@@ -19,3 +19,10 @@ document.querySelector('.popup-image span').onclick = () =>{
     document.querySelector('.popup-image').style.display = 'none';
 
 }
+
+var path = "../galeria/galeria.html"
+document.querySelectorAll('ul li a').forEach(function(link) {
+  if (link.getAttribute('href') === path) {
+    link.classList.add('active');
+  }
+});

@@ -89,6 +89,13 @@
     color: white;
     cursor: pointer;
   }
+
+  li a.active {
+    background-color: rgba(255, 206, 166, 0.2);
+    border-radius: 10px;  
+    padding: 2px;
+    font-weight: 600;
+  }
   
   #burguer{
     display: none;
