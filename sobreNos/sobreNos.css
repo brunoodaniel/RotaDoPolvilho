@@ -171,6 +171,7 @@ main{
 #container01-sitio-conquista img{
   height: 300px;
   width: 300px;
+  background-color: white;
 }
 
 #container01-sitio-conquista p{
@@ -217,11 +218,11 @@ main{
   margin-top: 10px;
 }
 
-#container02-polvilho-tupguar h1{
-  color: var(--marromClaro);
-  text-align: center;
-  margin-top: 35px;
-}
+  #container02-polvilho-tupguar h1{
+    color: var(--marromClaro);
+    text-align: center;
+    margin-top: 35px;
+  }
 
 #texto-polvilho-tupguar{
   margin-top: 20px;
@@ -710,12 +711,127 @@ main{
 
 .container-empreendedorismos{
   display: grid;
-  grid-template-columns: repeat(2, 0fr);
+  grid-template-columns: repeat(1, 0fr);
   align-items: center;
   justify-content: center;
   gap: 2em;
   margin-top: 50px;
   background-color: var(--marromEscuro);
+}
+
+#container01-sitio-conquista{
+  padding-bottom: 10px;
+}
+
+#container01-polvilho-tupguar{
+  padding-bottom: 10px;
+}
+
+#container01-polvilho-ourense{
+  padding-bottom: 10px;
+}
+
+#container01-big-minas{
+  padding-bottom: 10px;
+}
+
+#container01-sitio-conquista img{
+  height: 190px;
+  width: 280px;
+}
+
+#container01-polvilho-tupguar img{
+  height: 190px;
+  width: 280px;
+  background-color: white;
+}
+
+#container01-polvilho-ourense img{
+  height: 190px;
+  width: 280px;
+  background-color: white;
+}
+
+#container01-big-minas img{
+  height: 190px;
+  width: 280px;
+  background-color: white;
+}
+
+#container01-sitio-conquista p{
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container01-polvilho-tupguar p{
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container01-polvilho-ourense p{
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container01-big-minas p{
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+  margin-top: 10px;
+}
+
+#container02-sitio-conquista h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+#container02-polvilho-tupguar h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+#container02-polvilho-ourense h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+#container02-big-minas h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+#texto-sitio-conquista{
+  font-size: 1em; 
+}
+
+#texto-polvilho-tupguar{
+  font-size: 1em;
+}
+
+#texto-polvilho-ourense{
+  font-size: 1em;
+}
+
+#texto-big-minas{
+  font-size: 1em;
+}
+
+.visitar-site{
+  font-size: 0.9em;
+}
+
+.redes-sociais i{
+  font-size: 1.3rem;
 }
 
 footer{
