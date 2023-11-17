@@ -1,0 +1,874 @@
+*{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+:root{
+    --marromEscuro: #806753;
+    --marromClaro: #FFCEA6;
+}
+
+img{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*HEADER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*MAIN --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    padding-top: 250px;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+:root{
+    --marromEscuro: #806753;
+    --marromClaro: #FFCEA6;
+}
+
+img{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*HEADER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+#navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background-color: var(--marromEscuro);
+    z-index: 999;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10em ;
+
+}
+
+.navbar-logo img{
+    display: flex;
+    width: 92px;
+    size: 92px;
+}
+
+#botao-navbar-logo{
+    margin: 0%;
+    padding: 0%;
+    border: 0em;
+    background-color: var(--marromEscuro);
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-left: 110px;
+}
+
+.navbar-list ul{
+    font-size: 22px;
+    display: flex;
+    text-align: center;
+    gap: 4em;
+    padding-right: 300px;
+    margin: 0;
+}
+
+.navbar-list ul a{
+    color: var(--marromClaro);
+    white-space: nowrap;
+
+}
+
+.navbar-list ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#burguer{
+    display: none;
+    color: var(--marromClaro);
+    padding-right: 180px;
+}
+
+
+#burguer:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a{
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*MAIN --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    padding-top: 250px;
+}
+
+.container {
+    gap: 80px;
+
+    display: flex;
+
+    
+    justify-content: space-between;
+    
+}
+
+.foto-agencia {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+    width: 60%; 
+}
+
+.info-container {
+    display: flex;
+    align-items: flex-end;
+    
+    width: 40%; 
+}
+
+.info-agencia {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+h1{
+    text-align: center;
+  }
+
+  .barra-horizontal{
+    height: 6.5px;
+    width: 24em;
+    background-color: var(--marromEscuro);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+ 
+  
+
+
+#saibamais-tbn:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
+/*FOOTER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+    height: 350px;
+    background-color: var(--marromEscuro);
+}
+
+#footer-container{
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer-text{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#logo-footer{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#footer-contacts{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+
+#footer-contacts i{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#footer-contacts i:hover{
+    color: var(--marromClaro);
+}
+
+#footer-navbar{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#footer-navbar ul{
+    display: flex;
+    font-size: 22px;
+    text-align: center;
+    gap: 5.5em;
+}
+
+#footer-navbar ul a{
+    color: white;
+    white-space: nowrap;
+}
+
+#footer-navbar ul a:hover{
+    color: var(--marromClaro);
+}
+
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 5.5em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 7em;
+    }
+}
+
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 6em;
+    }
+
+   
+    
+}
+
+@media(max-width: 1250px){
+    main{
+        padding-top: 180px;
+    }
+
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
+        gap: 3em; 
+        position: relative;
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu{
+        background-color: var(--marromEscuro);
+        height: 23em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
+    }
+
+    
+    
+   
+
+}
+
+@media(max-width: 1023px){
+    footer{
+        display: flex;
+        height: 430px;
+    }
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 150px;
+        width: 150px;
+        order: 2;
+        align-items: center;
+    }
+
+    #footer-contacts{
+        order: 3;
+    }
+
+    #footer-contacts i{
+        font-size: 1.4em;
+    }
+
+    #footer-text{
+        font-size: 14px;
+        order: 4;
+    }
+
+    #footer-navbar{
+        width: 50%;
+        order: 5;
+        margin: 30px 34px 30px 30px;
+    }
+
+    #footer-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7em;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    main{
+        padding-top: 80px;
+    }
+
+    #navbar{
+        gap: 2em;
+    }  
+
+   
+    
+   
+
+    
+ 
+
+
+    #saibaMaisBtn{
+        text-align: center;
+        margin: auto;
+        margin-left: 38%;
+        padding: 6em, 2rem, 1.1em;
+        border-radius: 4px;
+        border: var(--marromClaro);
+        background-color: var(--marromEscuro);
+        font-weight: 800;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+        color: var(--marromClaro);
+        padding-left: 5px;
+        padding-right: 5px;
+        min-width: 0px;
+        max-width: 153px;
+        white-space: nowrap;
+      }
+
+    
+    
+
+    footer{
+        display: flex;
+        height: 350px;
+    }
+
+    
+   
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 100px;
+        width: 100px;
+        order: 2;
+        align-items: center;
+    }
+
+
+}
+
+h1{
+    text-align: center;
+  }
+
+  .barra-horizontal{
+    height: 6.5px;
+    width: 24em;
+    background-color: var(--marromEscuro);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+ 
+  
+  #saibamais-btn{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    border: var(--marromClaro);
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+    color: var(--marromClaro);
+    white-space: nowrap;
+}
+
+#saibamais-tbn:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
+/*FOOTER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+    height: 350px;
+    background-color: var(--marromEscuro);
+}
+
+#footer-container{
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer-text{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#logo-footer{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#footer-contacts{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+
+#footer-contacts i{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#footer-contacts i:hover{
+    color: var(--marromClaro);
+}
+
+#footer-navbar{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#footer-navbar ul{
+    display: flex;
+    font-size: 22px;
+    text-align: center;
+    gap: 5.5em;
+}
+
+#footer-navbar ul a{
+    color: white;
+    white-space: nowrap;
+}
+
+#footer-navbar ul a:hover{
+    color: var(--marromClaro);
+}
+
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 5.5em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 7em;
+    }
+}
+
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 6em;
+    }
+
+    #custom-background {
+        position: absolute;
+        display: flex;
+        width: 26em;
+        height: 34em;
+        background: var(--marromEscuro);
+        top: -4em;
+        right: 1em;
+        bottom: -4em;
+        left: 10em;
+        z-index: -1;
+    }
+
+    #carouselExampleIndicators {
+        width: 500px; 
+        height: 355px;
+        margin: auto;
+      }
+    
+      .carousel-item {
+        text-align: center;
+        width: 600px;
+        height: 420px;
+      }
+      
+      .carousel-control-prev, .carousel-control-next {
+        width: 20%;
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 70px; 
+        width: 70px; 
+        background-size: 100%, 100%; 
+      }
+    
+      .carousel-indicators{
+        display: none;
+        margin-left: 5.5em;
+        }
+
+    .paragrafos{
+        text-align: center;
+        width: 800px;
+        font-size: 1em;
+        text-align: justify;
+        padding: 0px 100px 0px 100px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+    }
+    
+    #fotomandioca-paginainicial{
+        height: 350px;
+        width: 500px;
+        margin-right: 100px;
+    }
+    
+}
+
+@media(max-width: 1250px){
+    main{
+        padding-top: 180px;
+    }
+
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
+        gap: 3em; 
+        position: relative;
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu{
+        background-color: var(--marromEscuro);
+        height: 23em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .paragrafos{
+        text-align: center;
+        width: 650px;
+        font-size: 1em;
+        text-align: justify;
+        padding: 0px 100px 0px 100px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+    }
+    
+    #fotomandioca-paginainicial{
+        height: 300px;
+        width: 450px;
+        margin-right: 100px;
+    }
+
+}
+
+@media(max-width: 1023px){
+    footer{
+        display: flex;
+        height: 430px;
+    }
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 150px;
+        width: 150px;
+        order: 2;
+        align-items: center;
+    }
+
+    #footer-contacts{
+        order: 3;
+    }
+
+    #footer-contacts i{
+        font-size: 1.4em;
+    }
+
+    #footer-text{
+        font-size: 14px;
+        order: 4;
+    }
+
+    #footer-navbar{
+        width: 50%;
+        order: 5;
+        margin: 30px 34px 30px 30px;
+    }
+
+    #footer-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7em;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    main{
+        padding-top: 80px;
+    }
+
+
+
+    footer{
+        display: flex;
+        height: 350px;
+    }
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 100px;
+        width: 100px;
+        order: 2;
+        align-items: center;
+    }
+
+    #footer-contacts{
+        order: 3;  
+    }
+
+    #footer-contacts i{
+        font-size: 1.2em;
+    }
+
+    #footer-text{
+        font-size: 10px;
+        order: 4;
+    }
+
+    #footer-navbar{
+        width: 50%;
+        order: 5;
+        margin: 30px 34px 30px 30px;
+    }
+
+    #footer-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .info-agencia {
+        padding: 0px 20px; /* Adjust the padding to add more space on the sides */
+        text-wrap: nowrap;
+        text-align: center; 
+    }
+
+    #saibamais-btn{
+        margin: auto;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: var(--marromClaro);
+        background-color: var(--marromEscuro);
+        font-weight: 800;
+        font-size: 1em;
+        text-transform: uppercase;
+        box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+        color: var(--marromClaro);
+        white-space: nowrap;
+        width: 200px;
+    }
+
+
+   
+
+}
