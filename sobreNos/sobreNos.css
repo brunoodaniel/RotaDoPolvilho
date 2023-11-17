@@ -171,25 +171,28 @@ main{
 
 /* SITIO CONQUISTA----------------------------------------------------------------------------------------------------------------*/
 
-#container01-sitio-conquista{
+.container-empreendedorismos-sitio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 80px;
+  background-color: var(--marromEscuro);
+}
+
+#container-sitio-conquista{
   padding: 40px;
 }
 
-#container01-sitio-conquista img{
-  height: 300px;
-  width: 300px;
-  background-color: white;
-}
-
-#container01-sitio-conquista p{
+#container-sitio-conquista p{
   width: 100%;
   text-align: center;
   font-size: 1.3em;
   color: white;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
-#container02-sitio-conquista h1{
+#container-sitio-conquista h1{
   color: var(--marromClaro);
   text-align: center;
 }
@@ -726,7 +729,16 @@ main{
   background-color: var(--marromEscuro);
 }
 
-#container01-sitio-conquista{
+.container-empreendedorismos-sitio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 50px;
+  background-color: var(--marromEscuro);
+}
+
+#container-sitio-conquista{
   padding-bottom: 10px;
 }
 
@@ -740,11 +752,6 @@ main{
 
 #container01-big-minas{
   padding-bottom: 10px;
-}
-
-#container01-sitio-conquista img{
-  height: 190px;
-  width: 280px;
 }
 
 #container01-polvilho-tupguar img{
@@ -765,12 +772,12 @@ main{
   background-color: white;
 }
 
-#container01-sitio-conquista p{
+#container-sitio-conquista p{
   width: 100%;
   text-align: center;
   font-size: 0.9em;
   color: white;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #container01-polvilho-tupguar p{
@@ -797,7 +804,7 @@ main{
   margin-top: 10px;
 }
 
-#container02-sitio-conquista h1{
+#container-sitio-conquista h1{
   font-size: 1.5em;
   margin-top: 0px;
 }
