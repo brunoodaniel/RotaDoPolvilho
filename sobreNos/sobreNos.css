@@ -228,11 +228,11 @@ main{
   margin-top: 10px;
 }
 
-  #container02-polvilho-tupguar h1{
-    color: var(--marromClaro);
-    text-align: center;
-    margin-top: 35px;
-  }
+#container02-polvilho-tupguar h1{
+  color: var(--marromClaro);
+  text-align: center;
+  margin-top: 35px;
+}
 
 #texto-polvilho-tupguar{
   margin-top: 20px;
