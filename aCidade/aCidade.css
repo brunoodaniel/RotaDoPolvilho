@@ -23,6 +23,15 @@ img{
     height: 100%;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    overflow-x: hidden;
+}
+  
 
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -490,7 +499,7 @@ footer{
 
 .paragrafos{
     display: flex;
-    width: 380px;
+    width: 350px;
     font-size: 1em;
     text-align: justify;
     letter-spacing: 1px;
@@ -505,13 +514,13 @@ footer{
     justify-content: center;
     align-items: center;
     height: auto; 
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .fotos {
-    height: 300px;
-    width: 380px;
+    height: 290px;
+    width: 350px;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 8px;

@@ -23,6 +23,15 @@ img{
     height: 100%;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    overflow-x: hidden;
+}
+  
 
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -395,8 +404,12 @@ main{
     padding-top: 50px;
 }
 
+#container-mapa-main{
+    gap: 1em;
+}
+
 #titulo-mapa{
-    width: 281px;
+    width: 291px;
     color: var(--marromEscuro);
     font-size: 0.8em;
     letter-spacing: 2px;

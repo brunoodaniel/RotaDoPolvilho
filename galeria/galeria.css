@@ -25,6 +25,15 @@
     height: 100%;
   }
   
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
   
   /*HEADER ------------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------------------------------*/
@@ -484,13 +493,13 @@
 }
 
   .container .popup-image span{
-    top: 1.4em; right: 1em;
+    top: 3.4em; right: 2.5em;
   }
 
   .container .popup-image img{
     margin-top: 1em;
-    height: 80%;
-    width: 85%;
+    height: 40%;
+    width: 45%;
   }
   
   footer{

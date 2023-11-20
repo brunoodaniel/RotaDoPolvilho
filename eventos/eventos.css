@@ -25,6 +25,15 @@
     height: 100%;
   }
   
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
   
   /*HEADER ------------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------------------------------*/
@@ -474,7 +483,7 @@
   
   .paragrafos{
     display: flex;
-    width: 380px;
+    width: 350px;
     font-size: 1em;
     text-align: justify;
     letter-spacing: 1px;
@@ -483,15 +492,15 @@
     margin: auto;    
 }
 
-  .container .popup-image span{
-    top: 1.4em; right: 1em;
-  }
+.container .popup-image span{
+  top: 3.4em; right: 2.5em;
+}
 
-  .container .popup-image img{
-    margin-top: 1em;
-    height: 80%;
-    width: 85%;
-  }
+.container .popup-image img{
+  margin-top: 1em;
+  height: 40%;
+  width: 45%;
+}
   
   footer{
     margin-top: 30px;

@@ -23,7 +23,15 @@ img{
     height: 100%;
 }
 
-
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    overflow-x: hidden;
+}
+  
 
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -673,7 +681,7 @@ footer{
     
     #texto-panorama{
         margin-top: 60px;
-        width: 380px;
+        width: 350px;
         margin: auto;
         color: var(--marromEscuro);
         font-size: 1.3em;
@@ -719,7 +727,7 @@ footer{
         justify-content: center;
         text-align: center;
         align-items: center;
-        width: 380px;
+        width: 350px;
         font-size: 1em;
         margin: auto;
         text-align: justify;
