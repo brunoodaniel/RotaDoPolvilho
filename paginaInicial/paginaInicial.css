@@ -23,6 +23,11 @@ img{
     height: 100%;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+
 
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -588,12 +593,12 @@ footer{
     }
 
     #tituloExterno{
-    text-align: center;
-    white-space: nowrap;
-    padding-top: 20px;
-    font-weight: 700;
-    color: var(--marromEscuro);
-    font-size: 1.4em;
+        text-align: center;
+        white-space: nowrap;
+        padding-top: 20px;
+        font-weight: 700;
+        color: var(--marromEscuro);
+        font-size: 1.4em;
     }
 
     #subtituloExterno{
@@ -675,7 +680,7 @@ footer{
         width: 380px;
         margin: auto;
         color: var(--marromEscuro);
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
     }
     

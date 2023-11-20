@@ -9,9 +9,9 @@ function menuShow(){
 }
   
 var frases = [
-    { titulo: "Rota Turística do Polvilho", subtitulo: "Tradição ourense" },
+    { titulo: "Rota Turística do Polvilho", subtitulo: "Tradição Ourense" },
     { titulo: "O caminho fala por si", subtitulo: "A rota e seus mais belos atrativos" },
-    { titulo: "Venha viver essa experiencia", subtitulo: "Agencias credenciadas" }
+    { titulo: "Venha viver essa experiencia", subtitulo: "Agências credenciadas" }
   ];
   
   $(document).ready(function(){
@@ -25,13 +25,13 @@ var frases = [
 
       switch(slideIndex) {
         case 0:
-            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../paginaInicial/paginaInicial.html";');
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../sobreNos/sobreNos.html";');
             break;
         case 1:
-            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../mapa/mapa.html";');
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../galeria/galeria.html";');
             break;
         case 2:
-            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../galeria/galeria.html";');
+            saibaMaisBtn.setAttribute('onclick', 'window.location.href = "../agenciasCredenciadas/agenciasCredenciadas.html";');
             break;
         default:
             saibaMaisBtn.removeAttribute('onclick');
@@ -42,6 +42,6 @@ var frases = [
   var botao = document.getElementById('saibamais-panorama');
     
   botao.addEventListener('click', function() {
-      window.location.href = '../galeria/galeria.html';
+      window.location.href = '../galeria/galeria.html#id-pontos-turisticos';
   });
   

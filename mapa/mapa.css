@@ -415,14 +415,24 @@ main{
     justify-content: center;
 }
 
+#mapa img{
+    height: 300px;
+    width: 380px;
+}
+
 #div-consultar-mapa{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#consultar-mapa{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 footer{
-    margin-top: 30px;
+    margin-top: 0px;
     display: flex;
     height: 350px;
 }
