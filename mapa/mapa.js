@@ -15,7 +15,7 @@ var botao = document.getElementById('consultar-mapa');
   });
 
 var path = "../mapa/mapa.html";
-document.querySelectorAll('ul li a').forEach(function(link) {
+document.querySelectorAll('.navbar-list ul li a').forEach(function(link) {
   if (link.getAttribute('href') === path) {
     link.classList.add('active');
   }

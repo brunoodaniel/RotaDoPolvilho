@@ -21,7 +21,7 @@ document.querySelector('.popup-image span').onclick = () =>{
 }
 
 var path = "../eventos/eventos.html";
-document.querySelectorAll('ul li a').forEach(function(link) {
+document.querySelectorAll('.navbar-list ul li a').forEach(function(link) {
   if (link.getAttribute('href') === path) {
     link.classList.add('active');
   }
