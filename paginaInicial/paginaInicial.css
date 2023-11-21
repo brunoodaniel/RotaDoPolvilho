@@ -521,6 +521,52 @@ footer{
         margin-right: 100px;
     }
 
+
+    #custom-background {
+        position: absolute;
+        display: flex;
+        width: 20em;
+        height: 22.2em;
+        background: var(--marromEscuro);
+        top: 2em;
+        right: 1em;
+        bottom: -4em;
+        left: 4em;
+        z-index: -1;
+    }
+    
+    #carouselExampleIndicators {
+        width: 500px; 
+        height: 335px;
+        margin: auto;
+      }
+    
+      .carousel-item {
+        text-align: center;
+        width: 300px;
+        height: 220px;
+        margin-top: 100px;
+      }
+      
+      .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+        margin-left: 10px;
+      }
+
+      .carousel-control-next{
+        margin-right: 160px;
+      }
+      
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 70px; 
+        width: 70px; 
+        background-size: 100%, 100%; 
+      }
+    
+      .carousel-indicators{
+        margin-left: 5.5em;
+        }
+
 }
 
 @media(max-width: 1023px){
@@ -582,10 +628,10 @@ footer{
     }  
 
     #custom-background {
-        width: 24em;
-        height: 19em;
+        width: 20em;
+        height: 17em;
         left: -20%;
-        top: 2em;
+        top: 3em;
     }
 
     #hash-paginainicial{
@@ -613,24 +659,26 @@ footer{
     }
     
     #carouselExampleIndicators {
-        width: 100%;
+        width: 80%;
         margin: auto;
+        margin-right: 20em;
     }
 
     .carousel-inner{
         margin-left: 60px;
-        padding-top: 75px;
+        padding-top: 0px;
     }
 
     .carousel-item {
         text-align: center;
-        width: 350px;
-        height: 220px;
+        width: 290px;
+        height: 170px;
       }
 
       .carousel-control-prev, .carousel-control-next {
         width: 40%;
-        margin-left: 15px;
+        margin-left: 1.7em;
+        margin-right: 4em;
       }
 
       .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -638,6 +686,54 @@ footer{
         width: 40px; 
         background-size: 100%, 100%; 
       }
+
+
+      /*
+      #custom-background {
+        position: absolute;
+        display: flex;
+        width: 20em;
+        height: 22.2em;
+        background: var(--marromEscuro);
+        top: 2em;
+        right: 1em;
+        bottom: -4em;
+        left: 4em;
+        z-index: -1;
+    }
+    
+    #carouselExampleIndicators {
+        width: 500px; 
+        height: 335px;
+        margin: auto;
+      }
+    
+      .carousel-item {
+        text-align: center;
+        width: 300px;
+        height: 220px;
+        margin-top: 100px;
+      }
+      
+      .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+        margin-left: 10px;
+      }
+
+      .carousel-control-next{
+        margin-right: 160px;
+      }
+      
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 70px; 
+        width: 70px; 
+        background-size: 100%, 100%; 
+      }
+    
+      .carousel-indicators{
+        margin-left: 5.5em;
+        }
+      */
 
 
     #saibaMaisBtn{
@@ -672,9 +768,13 @@ footer{
         margin-bottom: 20px;
     }
 
+    #div-imagem-panorama img{
+        width: 100%;
+    }
+
     #imagem-panorama{
         margin: auto;
-        width: 100vw;
+        width: 100%;
         height: 80px;
     }
     
