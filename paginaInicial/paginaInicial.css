@@ -7,11 +7,6 @@
     text-decoration: none !important;
 }
 
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}
-
 :root{
     --marromEscuro: #806753;
     --marromClaro: #FFCEA6;
@@ -26,12 +21,10 @@ img{
 html, body {
     margin: 0;
     padding: 0;
-  }
-  
-body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
 }
-  
+
 
 /*HEADER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
@@ -42,7 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: var(--marromEscuro);
     z-index: 999;
     padding-top: 1em;
@@ -82,8 +75,8 @@ body {
     display: flex;
     text-align: center;
     gap: 4em;
-    padding-right: 300px;
-    margin: 0;
+    margin-right: 9em;
+    margin-bottom: 0em;
 }
 
 .navbar-list ul a{
@@ -100,7 +93,6 @@ body {
 #burguer{
     display: none;
     color: var(--marromClaro);
-    padding-right: 180px;
 }
 
 
@@ -391,6 +383,12 @@ footer{
         margin-left: 6em;
     }
 
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 3.5em;
+        margin-right: 4em;
+    }
+
     #custom-background {
         position: absolute;
         display: flex;
@@ -460,7 +458,7 @@ footer{
 
     #navbar{
         display: flex;
-        padding: 13px 0 13px 1em;
+        padding: 13px 0 13px 0em;
         gap: 3em; 
         position: relative;
     }
@@ -479,6 +477,7 @@ footer{
 
     #burguer{
         display: flex;
+        margin-right: 5em;
     }
 
     .mobile-menu{
