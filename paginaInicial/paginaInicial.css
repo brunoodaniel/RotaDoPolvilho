@@ -628,10 +628,12 @@ footer{
     }  
 
     #custom-background {
+        display: flex;
         width: 20em;
-        height: 17em;
-        left: -20%;
-        top: 3em;
+        height: 13em;
+        top: 5em;
+        align-items: center;
+        justify-content: center;
     }
 
     #hash-paginainicial{
@@ -659,20 +661,20 @@ footer{
     }
     
     #carouselExampleIndicators {
-        width: 80%;
+        width: 100%;
         margin: auto;
-        margin-right: 20em;
+        
     }
 
     .carousel-inner{
-        margin-left: 60px;
+        margin-left: 0px;
         padding-top: 0px;
     }
 
     .carousel-item {
-        text-align: center;
         width: 290px;
         height: 170px;
+        margin-left: 5em;
       }
 
       .carousel-control-prev, .carousel-control-next {
