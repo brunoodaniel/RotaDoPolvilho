@@ -21,8 +21,8 @@ img{
 html, body {
   margin: 0;
   padding: 0;
-  /*overflow-x: hidden;
-  overflow-y: auto;*/
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -624,19 +624,19 @@ footer{
   }
 
   #texto-sitio-conquista{
-    width: 500px;
+    width: 450px;
   }
 
   #texto-polvilho-tupguar{
-    width: 500px;
+    width: 450px;
   }
 
   #texto-polvilho-ourense{
-    width: 500px;
+    width: 450px;
   }
 
   #texto-big-minas{
-    width: 500px;
+    width: 450px;
   }
 
 }
@@ -867,6 +867,7 @@ main{
 #texto-big-minas{
   font-size: 1em;
 }
+
 
 .visitar-site{
   font-size: 0.9em;
