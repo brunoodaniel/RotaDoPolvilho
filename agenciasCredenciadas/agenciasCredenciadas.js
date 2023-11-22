@@ -9,7 +9,7 @@ function menuShow(){
 }
 
 var botao = document.getElementById('saibamais-botao');
-    
-  botao.addEventListener('click', function() {
-      window.location.href = '../galeria/galeria.html';
-  });
+
+botao.addEventListener('click', function() {
+    window.open('https://www.olhebemasmontanhas.com.br/', '_blank');
+});  
