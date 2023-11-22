@@ -281,7 +281,6 @@ main{
     font-weight: 800;
     font-size: 1.3em;
     text-transform: uppercase;
-    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
     color: var(--marromClaro);
     white-space: nowrap;
 }
@@ -392,33 +391,37 @@ footer{
     #custom-background {
         position: absolute;
         display: flex;
-        width: 26em;
-        height: 34em;
+        width: 22em;
+        height: 24em;
         background: var(--marromEscuro);
-        top: -4em;
+        top: -2.5em;
         right: 1em;
         bottom: -4em;
         left: 10em;
         z-index: -1;
     }
 
+    .carousel-inner{
+        width: 450px;
+        height: 325px;
+    }
+    
     #carouselExampleIndicators {
-        width: 500px; 
-        height: 355px;
+        width: 400px; 
+        height: 305px;
         margin: auto;
       }
     
       .carousel-item {
         text-align: center;
-        width: 600px;
-        height: 420px;
+        width: 450px;
+        height: 300px;
       }
       
       .carousel-control-prev, .carousel-control-next {
-        width: 20%;
-        margin-top: 35px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 30%;
+        height: 18em;
+        margin-left: 55px;
       }
       
       .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -428,9 +431,9 @@ footer{
       }
     
       .carousel-indicators{
-        display: none;
         margin-left: 5.5em;
         }
+
 
     .paragrafos{
         text-align: center;
@@ -521,40 +524,40 @@ footer{
         margin-right: 100px;
     }
 
-
     #custom-background {
         position: absolute;
         display: flex;
-        width: 20em;
-        height: 22.2em;
+        width: 16em;
+        height: 22em;
         background: var(--marromEscuro);
-        top: 2em;
+        top: -2.5em;
         right: 1em;
         bottom: -4em;
-        left: 4em;
+        left: 10em;
         z-index: -1;
+    }
+
+    .carousel-inner{
+        width: 350px;
+        height: 275px;
     }
     
     #carouselExampleIndicators {
-        width: 500px; 
-        height: 335px;
+        width: 300px; 
+        height: 285px;
         margin: auto;
       }
     
       .carousel-item {
         text-align: center;
-        width: 300px;
-        height: 220px;
-        margin-top: 100px;
+        width: 350px;
+        height: 275px;
       }
       
       .carousel-control-prev, .carousel-control-next {
-        width: 10%;
-        margin-left: 10px;
-      }
-
-      .carousel-control-next{
-        margin-right: 160px;
+        width: 30%;
+        height: 18em;
+        margin-left: 55px;
       }
       
       .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -566,6 +569,7 @@ footer{
       .carousel-indicators{
         margin-left: 5.5em;
         }
+
 
 }
 
@@ -581,7 +585,7 @@ footer{
        gap: 3rem;
        width: 50%;
        order: 1;
-       margin: 30px 30px 20px 70px;
+       margin: 21px 30px 20px 70px;
     }
 
     #logo-footer{
@@ -627,15 +631,6 @@ footer{
         gap: 2em;
     }  
 
-    #custom-background {
-        display: flex;
-        width: 20em;
-        height: 13em;
-        top: 5em;
-        align-items: center;
-        justify-content: center;
-    }
-
     #hash-paginainicial{
         height: 5px;
         width: 60%;
@@ -660,35 +655,60 @@ footer{
         font-size: 1em;
     }
     
-    #carouselExampleIndicators {
-        width: 100%;
-        margin: auto;
-        
+
+
+    #custom-background {
+        position: absolute;
+        display: flex;
+        width: 12em;
+        height: 18em;
+        background: var(--marromEscuro);
+        top: -2.5em;
+        right: 1em;
+        bottom: -4em;
+        left: 10em;
+        z-index: -1;
     }
+
 
     .carousel-inner{
-        margin-left: 0px;
-        padding-top: 0px;
+        width: 19em;
+        height: 13em;
+        margin-top: 5em;
     }
-
-    .carousel-item {
-        width: 290px;
-        height: 170px;
-        margin-left: 5em;
+    
+    #carouselExampleIndicators {
+        width: 280px; 
+        height: 225px;
+        margin: auto;
       }
-
+    
+      .carousel-item {
+        text-align: center;
+        width: 350px;
+        height: 275px;
+      }
+      
       .carousel-control-prev, .carousel-control-next {
         width: 40%;
-        margin-left: 1.7em;
-        margin-right: 1.7em;
+        height: 23em;
+        margin-left: 2em;
+        margin-right: 1em;
       }
-
+      
       .carousel-control-prev-icon, .carousel-control-next-icon {
-        height: 40px; 
-        width: 40px; 
+        height: 50px; 
+        width: 50px; 
         background-size: 100%, 100%; 
       }
+    
+      .carousel-indicators{
+        margin-left: 5.5em;
+        }
 
+
+
+    
     #saibaMaisBtn{
         text-align: center;
         margin: auto;
