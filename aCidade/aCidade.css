@@ -52,8 +52,8 @@ html, body {
 
 .navbar-logo img{
     display: flex;
-    width: 92px;
-    size: 92px;
+    width: 5.75em;
+    size: 5.75em;
 }
 
 #botao-navbar-logo{
@@ -496,6 +496,12 @@ footer{
 #navbar{
     gap: 2em;
 }  
+
+.navbar-logo img{
+    display: flex;
+    width: 4.5em;
+    size: 4.5em;
+}
 
 .container1 img{
     height: 100px;

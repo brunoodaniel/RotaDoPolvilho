@@ -52,9 +52,9 @@ html, body {
 
 .navbar-logo img{
     display: flex;
-    width: 92px;
-    size: 92px;
-}
+    width: 5.75em;
+    size: 5.75em;
+  }
 
 #botao-navbar-logo{
     margin: 0%;
@@ -662,6 +662,12 @@ footer{
         gap: 2em;
     }  
 
+    .navbar-logo img{
+        display: flex;
+        width: 4.5em;
+        size: 4.5em;
+    }
+
     #hash-paginainicial{
         height: 5px;
         width: 60%;
@@ -737,9 +743,6 @@ footer{
         margin-left: 5.5em;
         }
 
-
-
-    
     #saibaMaisBtn{
         text-align: center;
         margin: auto;
