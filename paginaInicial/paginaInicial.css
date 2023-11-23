@@ -716,8 +716,8 @@ footer{
     
       .carousel-item {
         text-align: center;
-        width: 350px;
-        height: 275px;
+        width: 19em;
+        height: 13em;
       }
       
       .carousel-control-prev, .carousel-control-next {

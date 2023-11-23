@@ -11,7 +11,7 @@ function menuShow(){
 var frases = [
     { titulo: "Rota Turística do Polvilho", subtitulo: "Tradição Ourense" },
     { titulo: "O caminho fala por si", subtitulo: "A rota e seus mais belos atrativos" },
-    { titulo: "Venha viver essa experiencia", subtitulo: "Agências credenciadas" }
+    { titulo: "Venha viver essa experiência", subtitulo: "Agências credenciadas" }
   ];
   
   $(document).ready(function(){
@@ -66,4 +66,36 @@ var frases = [
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Verifica se há um hash na URL
+    if (window.location.hash) {
+        // Selecione a seção com base no hash da URL
+        var targetSection = document.querySelector(window.location.hash);
+
+        // Role suavemente para a seção
+        if (targetSection) {
+            var targetOffset = targetSection.offsetTop;
+            var scrollDuration = 1200; // Ajuste conforme necessário para a velocidade desejada
+            var startTime;
+            var originalY = window.scrollY;
+
+            function scrollToTarget(timestamp) {
+                if (!startTime) startTime = timestamp;
+
+                var elapsed = timestamp - startTime;
+                var progress = Math.min(elapsed / scrollDuration, 1);
+                var newY = originalY + (targetOffset * progress);
+
+                window.scroll(0, newY);
+
+                if (progress < 1) {
+                    requestAnimationFrame(scrollToTarget);
+                }
+            }
+
+            requestAnimationFrame(scrollToTarget);
+        }
+    }
 });
