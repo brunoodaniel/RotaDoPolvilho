@@ -190,6 +190,36 @@ main{
 }
 
 
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--marromEscuro);
+    border-radius: 30%;
+    padding: 0.2rem;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.back-to-top span {
+    color: var(--marromClaro);
+    font-size: 3rem;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+    background-color: var(--marromEscuro);
+}
+
+.back-to-top:hover span {
+    transform: translateY(-4px);
+}
+
 /*FOOTER ------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------*/
 
