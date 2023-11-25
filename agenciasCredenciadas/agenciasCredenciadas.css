@@ -362,12 +362,12 @@ footer{
 
     #burguer{
         display: flex;
-        margin-right: 5em;
+        margin-right: 5.5em;
     }
 
     .mobile-menu{
         background-color: var(--marromEscuro);
-        height: 22.8em;
+        height: 23em;
         position: absolute;
         top: 0;
         right: 0;
